@@ -33,6 +33,8 @@
     "test": "node node_modules/grunt-cli/bin/grunt test",
     "db:seed": "cross-env NODE_ENV=test grunt db-reset",
     "precommit": "grunt precommit",
+    
+    
     "docker-mongo": "docker run -p 27017:27017 --name mongo  mongo:latest",
     "start-infra": "docker-compose up",
     "stop-infra": "docker-compose down",
