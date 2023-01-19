@@ -1,7 +1,3 @@
 {
-  "settingsInheritedFrom": "aayant-mend/whitesource-config@main",
-  "projectToken": "72df6bb34023460d9abba9da90b8bdd9038ead7e863f41c9b0f6000ea96a8e07"
+  "settingsInheritedFrom": "aayant-mend/whitesource-config@main"
 }
-
-
-
