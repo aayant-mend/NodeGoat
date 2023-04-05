@@ -1,3 +1,6 @@
 {
-  "settingsInheritedFrom": "aayant-mend/whitesource-config@main"
+  "settingsInheritedFrom": "aayant-mend/whitesource-config@main",
+  "scanSettings": {
+    "baseBranches": ["main", "187"]
+  }
 }
