@@ -1,5 +1,5 @@
 {
-    "settingsInheritedFrom": "aayant-mend/mend-config@main",
+    "settingsInheritedFrom": "aayant-mend/mend-config@highseverity",
     "scanSettings": {
         "baseBranches": [
             "main",
