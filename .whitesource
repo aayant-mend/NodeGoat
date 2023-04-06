@@ -2,7 +2,7 @@
     "settingsInheritedFrom": "aayant-mend/mend-config@highseverity",
     "scanSettings": {
         "baseBranches": [
-            "main",
+            "master",
             "187"
         ]
     }
