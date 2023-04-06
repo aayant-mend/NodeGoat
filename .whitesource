@@ -1,6 +1,9 @@
 {
-"settingsInheritedFrom": "aayant-mend/mend-config@main", 
-"scanSettings": {
-  "baseBranches": ["main","187"]
-}
+    "settingsInheritedFrom": "aayant-mend/mend-config@main",
+    "scanSettings": {
+        "baseBranches": [
+            "main",
+            "187"
+        ]
+    }
 }
