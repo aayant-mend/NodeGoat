@@ -21,7 +21,7 @@
     },
     "checkRunSettings": {
         "vulnerableCheckRunConclusionLevel": "failure",
-        "displayMode": "baseline",
+        "displayMode": "diff",
         "useMendCheckNames": true
     },
     "checkRunSettingsSAST": {
