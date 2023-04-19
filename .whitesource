@@ -5,7 +5,7 @@
         "configExternalURL": "",
         "projectToken": "",
         "baseBranches": [
-            "main",
+            "master",
             "187"
         ],
         "enableLicenseViolations": "true",
