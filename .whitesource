@@ -1,32 +1,16 @@
 {
-    "settingsInheritedFrom": "aayant-mend/whitesource-config@primary",
     "scanSettings": {
         "configMode": "AUTO",
-        "configExternalURL": "",
-        "projectToken": "",
         "baseBranches": [
             "master",
-            "187"
+            "main"
         ],
-        "enableLicenseViolations": "true",
-        "enableSAST": "false",
-        "javaVersion": 17
-    },
-    "scanSettingsSAST": {
-        "enableScan": false,
-        "scanPullRequests": false,
-        "incrementalScan": true,
-        "baseBranches": [],
-        "snippetSize": 10
+        "enableLicenseViolations": "false",
+        "enableIaC": "false"
     },
     "checkRunSettings": {
-        "vulnerableCheckRunConclusionLevel": "failure",
-        "displayMode": "diff",
-        "useMendCheckNames": true
-    },
-    "checkRunSettingsSAST": {
-        "checkRunConclusionLevel": "failure",
-        "severityThreshold": "high"
+        "vulnerableCheckRunConclusionLevel": "success",
+        "displayMode": "diff"
     },
     "issueSettings": {
         "minSeverityLevel": "LOW",
@@ -34,10 +18,8 @@
     },
     "remediateSettings": {
         "workflowRules": {
-            "enabled": true
+            "enabled": true,
+            "minVulnerabilitySeverity": "LOW"
         }
-    },
-    "leastVulnerablePackageSettings": {
-        "enabled": true
     }
 }
