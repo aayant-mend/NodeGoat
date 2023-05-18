@@ -21,5 +21,8 @@
             "enabled": true,
             "minVulnerabilitySeverity": "LOW"
         }
+    },
+    "leastVulnerablePackageSettings": {
+        "enabled": true
     }
 }
