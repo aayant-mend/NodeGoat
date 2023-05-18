@@ -1,30 +1,26 @@
 {
     "scanSettings": {
         "configMode": "AUTO",
-        "baseBranches": [
-            "master",
-            "main"
-        ],
-        "enableLicenseViolations": "false",
-        "enableIaC": "false"
+        "configExternalURL": "",
+        "baseBranches": [],
+        "enableLicenseViolations": true,
+        "enableIaC": false
+    },
+    "leastVulnerablePackageSettings": {
+        "enabled": true
     },
     "checkRunSettings": {
-        "vulnerableCheckRunConclusionLevel": "success",
+        "vulnerableCheckRunConclusionLevel": "failure",
         "displayMode": "diff"
     },
     "issueSettings": {
         "minSeverityLevel": "LOW",
-        "issueType": "DEPENDENCY"
+        "issueType": "DEPENDENCY",
+        "displayLicenseViolations": true
     },
     "remediateSettings": {
         "workflowRules": {
-            "enabled": true,
-            "minVulnerabilitySeverity": "LOW"
+            "enabled": true
         }
-    },
-    "leastVulnerablePackageSettings": {
-        "enabled": true
     }
 }
-
-
