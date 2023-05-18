@@ -7,6 +7,9 @@
         "baseBranches": [],
         "snippetSize": 10
     },
+    "leastVulnerablePackageSettings": {
+        "enabled": true
+    },
     "remediateSettings": {
         "workflowRules": {
             "enabled": true
