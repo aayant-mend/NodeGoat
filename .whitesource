@@ -1,22 +1,8 @@
 {
-    "settingsInheritedFrom": "aayant-mend/whitesource-config@vonagetest",
-    "scanSettingsSAST": {
-        "enableScan": false,
-        "scanPullRequests": true,
-        "incrementalScan": true,
-        "baseBranches": [],
-        "snippetSize": 10
-    },
-    "leastVulnerablePackageSettings": {
-        "enabled": true
-    },
     "remediateSettings": {
         "workflowRules": {
-            "enabled": true
-        },
-        "enableRenovate": true,
-        "extends": [
-            "github>whitesource/merge-confidence:beta"
-        ]
+            "enabled": true,
+            "minVulnerabilitySeverity": "HIGH"
+        }
     }
 }
