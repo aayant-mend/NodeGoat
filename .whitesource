@@ -29,5 +29,5 @@
             "enabled": true,
             "minVulnerabilitySeverity": "HIGH"
         }
-    },
+    }
 }
