@@ -1,8 +1,33 @@
 {
+    "scanSettings": {
+        "configMode": "AUTO",
+        "configExternalURL": "",
+        "enableLicenseViolations": "true",
+        "enableIaC": "true",
+        "baseBranches": []
+    },
+    "checkRunSettings": {
+        "vulnerableCheckRunConclusionLevel": "failure",
+        "licenseCheckRunConclusionLevel": "failure",
+        "iacCheckRunConclusionLevel": "failure",
+        "useMendCheckNames": true,
+        "showWsInfo": true,
+        "displayMode": "diff"
+    },
+    "pullRequestStatusSettings": {
+        "vulnerablePullRequestStatus": "failed",
+        "displayMode": "diff",
+        "useMendStatusNames": true
+    },
+    "issueSettings": {
+        "minSeverityLevel": "LOW",
+        "issueType": "DEPENDENCY",
+        "displayLicenseViolations": "true"
+    },
     "remediateSettings": {
         "workflowRules": {
             "enabled": true,
             "minVulnerabilitySeverity": "HIGH"
         }
-    }
+    },
 }
