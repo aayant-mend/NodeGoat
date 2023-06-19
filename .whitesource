@@ -1,33 +1,48 @@
 {
-    "scanSettings": {
-        "configMode": "AUTO",
-        "configExternalURL": "",
-        "enableLicenseViolations": "true",
-        "enableIaC": "true",
-        "baseBranches": []
+  "settingsInheritedFrom": "aayant-mend/whitesource-config@primary",
+  "scanSettings": {
+    "configMode": "AUTO",
+    "enableLicenseViolations": true,
+    "baseBranches": [
+      "release/1.1.14",
+      "develop/1.15",
+      "master"
+    ]
+  },
+  "checkRunSettings": {
+    "vulnerableCheckRunConclusionLevel": "failure",
+    "displayMode": "diff",
+    "useMendCheckNames": true
+  },
+  "issueSettings": {
+    "minSeverityLevel": "LOW",
+    "issueType": "DEPENDENCY"
+  },
+  "remediateSettings": {
+    "workflowRules": {
+      "enabled": true
     },
-    "checkRunSettings": {
-        "vulnerableCheckRunConclusionLevel": "failure",
-        "licenseCheckRunConclusionLevel": "failure",
-        "iacCheckRunConclusionLevel": "failure",
-        "useMendCheckNames": true,
-        "showWsInfo": true,
-        "displayMode": "diff"
-    },
-    "pullRequestStatusSettings": {
-        "vulnerablePullRequestStatus": "failed",
-        "displayMode": "diff",
-        "useMendStatusNames": true
-    },
-    "issueSettings": {
-        "minSeverityLevel": "LOW",
-        "issueType": "DEPENDENCY",
-        "displayLicenseViolations": "true"
-    },
-    "remediateSettings": {
-        "workflowRules": {
-            "enabled": true,
-            "minVulnerabilitySeverity": "HIGH"
-        }
-    }
+    "enableRenovate": true,
+    "extends": [
+      "config:base"
+    ],
+    "schedule": [
+      "before 3am on the first day of the month"
+    ],
+    "packageRules": [
+      {
+        "matchPackageNames": [
+          "react-scripts",
+          "typescript",
+          "jest",
+          "ts-jest",
+          "marked",
+          "underscore",
+          "openjdk"
+        ],
+        "groupName": "Core Frontend libraries",
+        "description": "Put extra care when updating these packages. They are the core of the frontend."
+      }
+    ]
+  }
 }
