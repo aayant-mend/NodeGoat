@@ -38,7 +38,7 @@
           "ts-jest",
           "marked",
           "underscore",
-          "openjdk"
+          "express"
         ],
         "groupName": "Core Frontend libraries",
         "description": "Put extra care when updating these packages. They are the core of the frontend."
